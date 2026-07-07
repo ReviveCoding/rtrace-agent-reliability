@@ -1,0 +1,121 @@
+{
+  "benchmark_counts": {
+    "calibration": 90,
+    "development": 90,
+    "final_clean": 120,
+    "final_compositional": 120,
+    "final_hard": 120,
+    "train": 360
+  },
+  "c5_operating_point": {
+    "review_capacity": 0.12,
+    "threshold": 0.07225651337256218
+  },
+  "claim_boundary": "synthetic local stateful benchmark; no production safety or QLoRA claim",
+  "config_fingerprint": "28e770a019987e846eb10a4b3c865adb5fe3d2fbd607d5c71eb0384ac79f9c9a",
+  "config_hash": "d33b43f075bdb686771a2786741ff055b1a904743c93c9d00f54d1c514d3a4e2",
+  "config_path": "C:\\Users\\bjw-0\\Downloads\\Apple02_rtrace_agentic_ai_reliability_evaluation\\src\\rtrace\\default.yaml",
+  "core_artifact_integrity": true,
+  "core_artifact_manifest": "core_artifact_manifest.json",
+  "dataset_fingerprint": "568d8ed42868f068607c9ca2e8b7acd38bb866ca55ba71a2493639e39e5b0388",
+  "effective_config": {
+    "benchmark": {
+      "calibration": 90,
+      "development": 90,
+      "final_clean": 120,
+      "final_compositional": 120,
+      "final_hard": 120,
+      "seed": 17,
+      "train": 360
+    },
+    "models": {
+      "calibration_regularization_candidates": [
+        0.005,
+        0.01,
+        0.02,
+        0.05,
+        0.1
+      ],
+      "lightgbm_estimators": 100,
+      "random_state": 17
+    },
+    "routing": {
+      "c3_review_capacity": 0.2,
+      "c4_review_capacity": 0.2,
+      "c5_review_capacity_candidates": [
+        0.12,
+        0.14,
+        0.16,
+        0.18,
+        0.2,
+        0.22,
+        0.24
+      ],
+      "conservative_multiplier": 0.85,
+      "scope_f1_tolerance": 0.02
+    },
+    "runtime": {
+      "bootstrap_samples": 2000
+    }
+  },
+  "hardware": {
+    "cpu_count": 32,
+    "cuda_available": true,
+    "cuda_device": "NVIDIA GeForce RTX 4090 Laptop GPU",
+    "git_revision": "unavailable",
+    "package_versions": {
+      "PyYAML": "6.0.3",
+      "lightgbm": "4.6.0",
+      "matplotlib": "3.11.0",
+      "numpy": "2.4.6",
+      "pandas": "3.0.3",
+      "pydantic": "2.13.4",
+      "scikit-learn": "1.9.0"
+    },
+    "platform": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9",
+    "torch": "2.11.0+cu128"
+  },
+  "human_handoff_boundary": "human-assisted completion is an evaluator-side oracle handoff metric and is not autonomous-agent performance",
+  "incident_replay": {
+    "failed": 0,
+    "incidents": 12,
+    "passed": 12,
+    "status": "PASS"
+  },
+  "operating_point_boundary": "C5 review capacity and threshold were selected on development data only; final splits were not used for operating-point selection.",
+  "oracle_boundary": "gold fields label/evaluate only; actors parse user_request text and runtime modules use observable features",
+  "pipeline_version": "0.6.11",
+  "release": {
+    "gates": {
+      "artifact_integrity": true,
+      "autonomy_noninferiority": true,
+      "calibration_nonregression": false,
+      "false_greenlight_nonregression": true,
+      "harm_cost_nonregression": true,
+      "incident_replay_contract": true,
+      "oracle_handoff_ceiling_noninferiority": true,
+      "paired_autonomy_ci_not_materially_negative": true,
+      "scope_f1_noninferiority": true,
+      "scope_overreach_nonregression": true
+    },
+    "reasons": [
+      "false_greenlight_nonregression:pass",
+      "oracle_handoff_ceiling_noninferiority:pass",
+      "autonomy_noninferiority:pass",
+      "scope_overreach_nonregression:pass",
+      "scope_f1_noninferiority:pass",
+      "harm_cost_nonregression:pass",
+      "calibration_nonregression:review",
+      "incident_replay_contract:pass",
+      "paired_autonomy_ci_not_materially_negative:pass",
+      "artifact_integrity:pass"
+    ],
+    "recommended_mode": "standard",
+    "verdict": "REVIEW"
+  },
+  "run_id": "e958dde1-4477-4528-a6fc-16cb17277288",
+  "seed": 23,
+  "source_fingerprint": "cead0307c58766969bb8b819844e9655c3530d43752dd7053a1c5fe754fadcc6",
+  "timestamp_utc": "2026-07-07T15:37:43Z"
+}

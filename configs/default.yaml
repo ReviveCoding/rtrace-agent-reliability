@@ -1,0 +1,20 @@
+benchmark:
+  train: 360
+  development: 90
+  calibration: 90
+  final_clean: 120
+  final_hard: 120
+  final_compositional: 120
+  seed: 17
+routing:
+  c3_review_capacity: 0.20
+  c4_review_capacity: 0.20
+  c5_review_capacity_candidates: [0.12, 0.14, 0.16, 0.18, 0.20, 0.22, 0.24]
+  conservative_multiplier: 0.85
+  scope_f1_tolerance: 0.02
+runtime:
+  bootstrap_samples: 2000
+models:
+  lightgbm_estimators: 100
+  random_state: 17
+  calibration_regularization_candidates: [0.005, 0.01, 0.02, 0.05, 0.1]

@@ -1,0 +1,53 @@
+# Python and local tooling
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Build and package outputs
+build/
+dist/
+*.egg-info/
+.wheel-venv/
+wheel-artifacts/
+docker-artifacts/
+
+# Generated evaluation evidence. Keep evidence in immutable release bundles, not source history.
+artifacts/
+reports/
+.env
+
+# Runtime-only state, logs, and transient reports
+*.sqlite
+*.sqlite3
+*.db
+*.log
+*.tmp
+coverage.json
+
+# R-TRACE local runtime, caches, and model artifacts
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+ML_Outputs/
+outputs/
+artifacts/
+checkpoints/
+wandb/
+hf_cache/
+huggingface/
+*.safetensors
+*.bin
+*.pt
+*.pth
+.env
+.env.*

@@ -1,0 +1,22 @@
+# Fast, deterministic CI and clean-wheel smoke configuration.
+# It exercises the complete topology without replacing the default evidence configuration.
+benchmark:
+  train: 72
+  development: 24
+  calibration: 24
+  final_clean: 24
+  final_hard: 24
+  final_compositional: 24
+  seed: 17
+routing:
+  c3_review_capacity: 0.20
+  c4_review_capacity: 0.20
+  c5_review_capacity_candidates: [0.16, 0.20, 0.24]
+  conservative_multiplier: 0.85
+  scope_f1_tolerance: 0.02
+runtime:
+  bootstrap_samples: 100
+models:
+  lightgbm_estimators: 20
+  random_state: 17
+  calibration_regularization_candidates: [0.01, 0.05]

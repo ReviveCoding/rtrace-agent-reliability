@@ -1,0 +1,79 @@
+{
+  "artifacts": [
+    {
+      "bytes": 928,
+      "path": "data_quality.json",
+      "sha256": "9ba5810754bf16e0de24fe7e3c38bba4df1a15a1d5dfc16ef0821c0c556a7792"
+    },
+    {
+      "bytes": 2275,
+      "path": "candidate_comparison.csv",
+      "sha256": "19335ca55d611fac0f27d9301659441d5d5d84bbb733b4e2fa507861f9392ece"
+    },
+    {
+      "bytes": 4947,
+      "path": "slice_metrics.csv",
+      "sha256": "eababa27cafc6d12e5ad2eef624e40d26523958c00b2751c916cee62677d5756"
+    },
+    {
+      "bytes": 436378,
+      "path": "predictions.csv",
+      "sha256": "eeaa19908a86d9c61ec887b4842ba57cb79772d568aea690e3336e3df1d0eab4"
+    },
+    {
+      "bytes": 342,
+      "path": "calibration_table.csv",
+      "sha256": "c87fa47377d04a7f7c68811e4115e9665155471854033e8196035819dd8eb3c3"
+    },
+    {
+      "bytes": 1195,
+      "path": "threshold_frontier.csv",
+      "sha256": "c2e6950c06ccfe948d954c1fd96e5fe966ab3f3dd4cfaec226300191a091c0f8"
+    },
+    {
+      "bytes": 1114,
+      "path": "reference_ablation.csv",
+      "sha256": "efb9e8e146d3273c4aaaf8328dfe6ed052d051d3704e08cde3f9bbeb83ac95a7"
+    },
+    {
+      "bytes": 233,
+      "path": "reference_selection.csv",
+      "sha256": "6a2498120045a4f5ca39d99c29a0f303b188922f694e4ad99ba4cffa6b95e43b"
+    },
+    {
+      "bytes": 880,
+      "path": "calibration_regularization_selection.csv",
+      "sha256": "16eb309a11ffbecf7dbefd54fd13ab11e7c9a00a92f161d3e0485a389ff7cb1f"
+    },
+    {
+      "bytes": 2814,
+      "path": "operating_point_selection.csv",
+      "sha256": "3f478e942e28a3d17fc79dd3e3ea89a6a80c529fa9cc22d7ab4836b801bed325"
+    },
+    {
+      "bytes": 173,
+      "path": "paired_comparison.csv",
+      "sha256": "4a9e9ede445173dc759b432b997b17bcdb8840d78b00a5915a819645d26dc1ee"
+    },
+    {
+      "bytes": 5474,
+      "path": "failure_cases.csv",
+      "sha256": "7153996a0204c27b578d43d930392f41e98d339a81b15e93ae865e8bcdd864f8"
+    },
+    {
+      "bytes": 903,
+      "path": "decision_scenarios.csv",
+      "sha256": "6ae17c85fc982da6a07411b656c3ec305fde95182defc6738597d8a1984566ec"
+    },
+    {
+      "bytes": 5448,
+      "path": "metrics.json",
+      "sha256": "b903608dcb856ac4943ffed2e4aeb9a268bbc65429b528584ead1cd7bde25a7c"
+    },
+    {
+      "bytes": 79,
+      "path": "incident_replays/incident_replay_summary.json",
+      "sha256": "31e6f5529a0f499e6635011f28504d39eb40df1d43b51c1e4deb54bf99ec5766"
+    }
+  ]
+}

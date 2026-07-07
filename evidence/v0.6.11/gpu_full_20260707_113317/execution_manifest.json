@@ -1,0 +1,10 @@
+﻿{
+    "model":  "Qwen/Qwen3-4B",
+    "revision":  "",
+    "torch_cuda_wheel":  "cu128",
+    "status":  "FULL_COMPLETED",
+    "claim_boundary":  "QLoRA uses repository-generated SafeAssist data. It is not API-Bank training and is not wired into the deterministic C0-C5 release evaluator.",
+    "seed":  17,
+    "run_root":  "\u003cREDACTED_LOCAL_RUN_ROOT\u003e",
+    "optional_mcp":  "SKIPPED"
+}

@@ -1,0 +1,3 @@
+reference_strategy,calibration_pr_auc,calibration_brier,selection_score,selected
+farthest_first,0.729277669821768,0.03955412824621358,0.7193891377602146,True
+random,0.5867527862208712,0.050250801610939554,0.5741900858181364,False

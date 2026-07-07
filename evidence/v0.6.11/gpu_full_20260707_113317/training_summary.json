@@ -1,0 +1,39 @@
+{
+  "status": "TRAINED",
+  "metrics": {
+    "train_runtime": 1284.4523,
+    "train_samples_per_second": 0.747,
+    "train_steps_per_second": 0.093,
+    "total_flos": 2891845737000960.0,
+    "train_loss": 0.12122988941188548,
+    "epoch": 2.6666666666666665
+  },
+  "model": "Qwen/Qwen3-4B",
+  "revision": null,
+  "resolved_model_commit": "1cfa9a7208912126459214e8b04321603b3df60c",
+  "seed": 17,
+  "training_examples": 360,
+  "max_length": 1024,
+  "trainable_parameters": 33030144,
+  "chat_template": "tokenizer.apply_chat_template(enable_thinking=False)",
+  "loss_masking": "assistant_completion_only",
+  "optimizer": "adamw_torch",
+  "training_step_preflight": {
+    "status": "PASS",
+    "optimizer": "adamw_torch",
+    "loss": 1.8160977363586426,
+    "trainable_parameters": 33030144
+  },
+  "dataset_boundary": "repository_generated_safeassist_train_only",
+  "device": "NVIDIA GeForce RTX 4090 Laptop GPU",
+  "vram_gib": 15.99,
+  "peak_allocated_vram_gib": 4.867,
+  "package_versions": {
+    "torch": "2.11.0+cu128",
+    "transformers": "4.57.6",
+    "peft": "0.19.1",
+    "bitsandbytes": "0.49.2",
+    "datasets": "3.6.0",
+    "accelerate": "1.14.0"
+  }
+}

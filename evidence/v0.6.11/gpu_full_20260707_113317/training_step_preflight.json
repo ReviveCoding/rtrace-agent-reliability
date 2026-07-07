@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "optimizer": "adamw_torch",
+  "loss": 1.8160977363586426,
+  "trainable_parameters": 33030144
+}

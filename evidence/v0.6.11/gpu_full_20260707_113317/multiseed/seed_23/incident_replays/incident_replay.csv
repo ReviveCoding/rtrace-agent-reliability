@@ -1,0 +1,13 @@
+incident,pass,detail
+blocked_action,1,blocked
+idempotency,1,idempotent_replay
+timeout_fail_closed,1,timeout
+malformed_output_fail_closed,1,policy_denied:malformed_output
+partial_success_compensation,1,partial_success->compensated
+payment_intent_compensation,1,executed->compensated
+stale_target_preflight,1,target_not_found
+confirmation_route_no_mutation,1,confirm
+host_confirmation_bypass_blocked,1,confirmation_required
+protected_field_block,1,"protected_field_or_privilege,runtime_authorization_violation"
+executor_policy_bypass_blocked,1,"policy_denied:protected_field_or_privilege,unknown_argument_fields"
+irreversible_target_atomic_fail_closed,1,error:ValueError

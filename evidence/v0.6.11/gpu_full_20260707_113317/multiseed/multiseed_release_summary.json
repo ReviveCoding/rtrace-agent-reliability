@@ -1,0 +1,166 @@
+{
+  "all_release_pass": false,
+  "config_fingerprint": "28e770a019987e846eb10a4b3c865adb5fe3d2fbd607d5c71eb0384ac79f9c9a",
+  "pipeline_version": "0.6.11",
+  "releases": [
+    {
+      "gates": {
+        "artifact_integrity": true,
+        "autonomy_noninferiority": true,
+        "calibration_nonregression": true,
+        "false_greenlight_nonregression": true,
+        "harm_cost_nonregression": true,
+        "incident_replay_contract": true,
+        "oracle_handoff_ceiling_noninferiority": true,
+        "paired_autonomy_ci_not_materially_negative": true,
+        "scope_f1_noninferiority": true,
+        "scope_overreach_nonregression": true
+      },
+      "reasons": [
+        "false_greenlight_nonregression:pass",
+        "oracle_handoff_ceiling_noninferiority:pass",
+        "autonomy_noninferiority:pass",
+        "scope_overreach_nonregression:pass",
+        "scope_f1_noninferiority:pass",
+        "harm_cost_nonregression:pass",
+        "calibration_nonregression:pass",
+        "incident_replay_contract:pass",
+        "paired_autonomy_ci_not_materially_negative:pass",
+        "artifact_integrity:pass"
+      ],
+      "recommended_mode": "standard",
+      "reused_existing_artifacts": false,
+      "seed": 11,
+      "verdict": "PASS"
+    },
+    {
+      "gates": {
+        "artifact_integrity": true,
+        "autonomy_noninferiority": true,
+        "calibration_nonregression": true,
+        "false_greenlight_nonregression": true,
+        "harm_cost_nonregression": true,
+        "incident_replay_contract": true,
+        "oracle_handoff_ceiling_noninferiority": true,
+        "paired_autonomy_ci_not_materially_negative": false,
+        "scope_f1_noninferiority": true,
+        "scope_overreach_nonregression": true
+      },
+      "reasons": [
+        "false_greenlight_nonregression:pass",
+        "oracle_handoff_ceiling_noninferiority:pass",
+        "autonomy_noninferiority:pass",
+        "scope_overreach_nonregression:pass",
+        "scope_f1_noninferiority:pass",
+        "harm_cost_nonregression:pass",
+        "calibration_nonregression:pass",
+        "incident_replay_contract:pass",
+        "paired_autonomy_ci_not_materially_negative:review",
+        "artifact_integrity:pass"
+      ],
+      "recommended_mode": "standard",
+      "reused_existing_artifacts": false,
+      "seed": 17,
+      "verdict": "REVIEW"
+    },
+    {
+      "gates": {
+        "artifact_integrity": true,
+        "autonomy_noninferiority": true,
+        "calibration_nonregression": false,
+        "false_greenlight_nonregression": true,
+        "harm_cost_nonregression": true,
+        "incident_replay_contract": true,
+        "oracle_handoff_ceiling_noninferiority": true,
+        "paired_autonomy_ci_not_materially_negative": true,
+        "scope_f1_noninferiority": true,
+        "scope_overreach_nonregression": true
+      },
+      "reasons": [
+        "false_greenlight_nonregression:pass",
+        "oracle_handoff_ceiling_noninferiority:pass",
+        "autonomy_noninferiority:pass",
+        "scope_overreach_nonregression:pass",
+        "scope_f1_noninferiority:pass",
+        "harm_cost_nonregression:pass",
+        "calibration_nonregression:review",
+        "incident_replay_contract:pass",
+        "paired_autonomy_ci_not_materially_negative:pass",
+        "artifact_integrity:pass"
+      ],
+      "recommended_mode": "standard",
+      "reused_existing_artifacts": false,
+      "seed": 23,
+      "verdict": "REVIEW"
+    },
+    {
+      "gates": {
+        "artifact_integrity": true,
+        "autonomy_noninferiority": true,
+        "calibration_nonregression": false,
+        "false_greenlight_nonregression": true,
+        "harm_cost_nonregression": true,
+        "incident_replay_contract": true,
+        "oracle_handoff_ceiling_noninferiority": true,
+        "paired_autonomy_ci_not_materially_negative": true,
+        "scope_f1_noninferiority": true,
+        "scope_overreach_nonregression": true
+      },
+      "reasons": [
+        "false_greenlight_nonregression:pass",
+        "oracle_handoff_ceiling_noninferiority:pass",
+        "autonomy_noninferiority:pass",
+        "scope_overreach_nonregression:pass",
+        "scope_f1_noninferiority:pass",
+        "harm_cost_nonregression:pass",
+        "calibration_nonregression:review",
+        "incident_replay_contract:pass",
+        "paired_autonomy_ci_not_materially_negative:pass",
+        "artifact_integrity:pass"
+      ],
+      "recommended_mode": "standard",
+      "reused_existing_artifacts": false,
+      "seed": 29,
+      "verdict": "REVIEW"
+    },
+    {
+      "gates": {
+        "artifact_integrity": true,
+        "autonomy_noninferiority": true,
+        "calibration_nonregression": true,
+        "false_greenlight_nonregression": true,
+        "harm_cost_nonregression": true,
+        "incident_replay_contract": true,
+        "oracle_handoff_ceiling_noninferiority": true,
+        "paired_autonomy_ci_not_materially_negative": true,
+        "scope_f1_noninferiority": true,
+        "scope_overreach_nonregression": true
+      },
+      "reasons": [
+        "false_greenlight_nonregression:pass",
+        "oracle_handoff_ceiling_noninferiority:pass",
+        "autonomy_noninferiority:pass",
+        "scope_overreach_nonregression:pass",
+        "scope_f1_noninferiority:pass",
+        "harm_cost_nonregression:pass",
+        "calibration_nonregression:pass",
+        "incident_replay_contract:pass",
+        "paired_autonomy_ci_not_materially_negative:pass",
+        "artifact_integrity:pass"
+      ],
+      "recommended_mode": "standard",
+      "reused_existing_artifacts": false,
+      "seed": 31,
+      "verdict": "PASS"
+    }
+  ],
+  "resumable": true,
+  "seeds": [
+    11,
+    17,
+    23,
+    29,
+    31
+  ],
+  "source_fingerprint": "cead0307c58766969bb8b819844e9655c3530d43752dd7053a1c5fe754fadcc6"
+}

@@ -1,0 +1,41 @@
+{
+  "composition_counts": {
+    "calibration": 6,
+    "development": 6,
+    "final_clean": 6,
+    "final_compositional": 12,
+    "final_hard": 6,
+    "train": 6
+  },
+  "counts": {
+    "calibration": 90,
+    "development": 90,
+    "final_clean": 120,
+    "final_compositional": 120,
+    "final_hard": 120,
+    "train": 360
+  },
+  "errors": [],
+  "final_compositional_flags": {
+    "ambiguity_required": 24,
+    "requires_confirmation": 100
+  },
+  "fingerprint": "568d8ed42868f068607c9ca2e8b7acd38bb866ca55ba71a2493639e39e5b0388",
+  "request_template_counts": {
+    "calibration": 6,
+    "development": 6,
+    "final_clean": 6,
+    "final_compositional": 12,
+    "final_hard": 6,
+    "train": 6
+  },
+  "status": "PASS",
+  "surface_template_counts": {
+    "calibration": 6,
+    "development": 6,
+    "final_clean": 6,
+    "final_compositional": 6,
+    "final_hard": 6,
+    "train": 6
+  }
+}

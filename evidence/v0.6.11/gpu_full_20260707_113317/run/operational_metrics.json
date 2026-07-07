@@ -1,0 +1,53 @@
+{
+  "actor_mode": "deterministic_local_simulation_text_parsed",
+  "c5_operating_point_selected_on_development": {
+    "review_capacity": 0.16,
+    "threshold": 0.08381957677712201
+  },
+  "calibration_regularization_selected_on_development": {
+    "C3": 0.05,
+    "C4": 0.01,
+    "C5": 0.01
+  },
+  "candidate_count": 6,
+  "effective_config": {
+    "benchmark": {
+      "calibration": 24,
+      "development": 24,
+      "final_clean": 24,
+      "final_compositional": 24,
+      "final_hard": 24,
+      "seed": 17,
+      "train": 72
+    },
+    "models": {
+      "calibration_regularization_candidates": [
+        0.01,
+        0.05
+      ],
+      "lightgbm_estimators": 20,
+      "random_state": 17
+    },
+    "routing": {
+      "c3_review_capacity": 0.2,
+      "c4_review_capacity": 0.2,
+      "c5_review_capacity_candidates": [
+        0.16,
+        0.2,
+        0.24
+      ],
+      "conservative_multiplier": 0.85,
+      "scope_f1_tolerance": 0.02
+    },
+    "runtime": {
+      "bootstrap_samples": 100
+    }
+  },
+  "final_task_count": 72,
+  "incident_replay_status": "PASS",
+  "pipeline_version": "0.6.11",
+  "qlora_executed": false,
+  "reference_ablation_executed": true,
+  "reference_strategy_selected_on_calibration": "random",
+  "run_seconds": 3.3629869000287727
+}

@@ -1,0 +1,2 @@
+mean_difference,ci_low,ci_high,bootstrap_samples,metric
+0.04722222222222222,0.025,0.07222222222222222,2000.0,autonomous_safe_completion_at_1:C5_minus_C3
