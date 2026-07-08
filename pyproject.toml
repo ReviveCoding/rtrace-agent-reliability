@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "rtrace-agentic-evaluation"
-version = "0.6.11"
+version = "0.6.12"
 description = "Local-first stateful MCP agent evaluation and release reliability framework"
 readme = "README.md"
 requires-python = ">=3.11,<3.14"

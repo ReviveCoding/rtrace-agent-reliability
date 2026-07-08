@@ -45,7 +45,7 @@ from .utils import (
     write_json,
 )
 
-PIPELINE_VERSION = "0.6.11"
+PIPELINE_VERSION = "0.6.12"
 
 
 def _paired_bootstrap(

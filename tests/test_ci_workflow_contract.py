@@ -36,7 +36,7 @@ def test_ci_workflow_has_required_quality_and_artifact_guards() -> None:
     assert "python -m mypy src/rtrace" in workflow
     assert "python -m build" in workflow
     assert "mcp-adapter-smoke:" in workflow
-    assert "actions/upload-artifact@v4" in workflow
+    assert "actions/upload-artifact@v6" in workflow
     assert "if-no-files-found: warn" in workflow
     assert "rtrace-wheel-smoke-${{ github.sha }}" in workflow
     assert "windows-powershell-smoke:" in workflow
@@ -63,3 +63,10 @@ def test_docker_smoke_pins_the_host_python_used_for_artifact_verification() -> N
     assert "actions/setup-python@v6" in docker_job
     assert 'python-version: "3.13"' in docker_job
     assert "python scripts/verify_output.py --output docker-artifacts" in docker_job
+
+
+def test_windows_inline_powershell_uses_braced_script_variable() -> None:
+    workflow = Path(".github/workflows/ci.yml").read_text(encoding="utf-8")
+
+    assert "${script}:" in workflow
+    assert "$script:" not in workflow
