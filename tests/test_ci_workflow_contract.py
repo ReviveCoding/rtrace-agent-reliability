@@ -23,9 +23,9 @@ def test_ci_workflow_has_required_quality_and_artifact_guards() -> None:
         assert job_name in jobs
     assert "pipeline-smoke" not in jobs
 
-    assert "actions/checkout@v6" in workflow
+    assert "actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803" in workflow
     assert "persist-credentials: false" in workflow
-    assert "actions/setup-python@v6" in workflow
+    assert "actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1" in workflow
     assert "cache: pip" in workflow
     assert 'python-version: ["3.11", "3.13"]' in workflow
     assert "PIP_NO_INPUT" in workflow
@@ -36,7 +36,7 @@ def test_ci_workflow_has_required_quality_and_artifact_guards() -> None:
     assert "python -m mypy src/rtrace" in workflow
     assert "python -m build" in workflow
     assert "mcp-adapter-smoke:" in workflow
-    assert "actions/upload-artifact@v6" in workflow
+    assert "actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f" in workflow
     assert "if-no-files-found: warn" in workflow
     assert "rtrace-wheel-smoke-${{ github.sha }}" in workflow
     assert "windows-powershell-smoke:" in workflow
@@ -60,7 +60,7 @@ def test_docker_smoke_pins_the_host_python_used_for_artifact_verification() -> N
     workflow = Path(".github/workflows/ci.yml").read_text(encoding="utf-8")
     docker_job = workflow.split("  docker-smoke:", maxsplit=1)[1]
 
-    assert "actions/setup-python@v6" in docker_job
+    assert "actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1" in docker_job
     assert 'python-version: "3.13"' in docker_job
     assert "python scripts/verify_output.py --output docker-artifacts" in docker_job
 
