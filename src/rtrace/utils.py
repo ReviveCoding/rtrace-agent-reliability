@@ -186,7 +186,9 @@ def source_fingerprint(root: str | Path | None = None) -> str:
         relative = path.relative_to(relative_root).as_posix().encode("utf-8")
         digest.update(relative)
         digest.update(b"\0")
-        digest.update(path.read_bytes())
+        with path.open("rb") as stream:
+            for block in iter(lambda: stream.read(1024 * 1024), b""):
+                digest.update(block)
         digest.update(b"\0")
     return digest.hexdigest()
 
